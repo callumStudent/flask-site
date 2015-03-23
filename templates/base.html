@@ -1,11 +1,25 @@
 <!doctype html>
 <html>
     <head>
+	<meta charset="UTF-8">
 	<title>{% block title %}{% endblock %} - Prodigy Archer</title>
     </head>
 
     <body>
-	<div name="content">
+	<div name="content_container">
+	    <header>
+		<h1>Prodigy Archer</h1>
+	    </header>
+	    <nav>
+		<ul id="navigation">
+		    <li><a id="current_page" href="">Home</a></li>
+		    <li><a href="programming.html">Programming</a></li>
+		    <li><a href="japanese.html">Japanese</a></li>
+		    <li><a href="">Other</a></li>
+		    <li><a href="">Other</a></li>
+		</ul>
+	    </nav>
+	    
 	    {% block content %}{% endblock %} 
 	</div>
     </body>
