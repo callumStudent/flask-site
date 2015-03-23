@@ -1,0 +1,121 @@
+html {
+    height: 100%;
+    position: relative;
+    min-height: 600px;
+    width: 100%;
+}
+body {
+    background: #E1E1E1;
+    color: #555;
+    font-family: veranda;
+    font-size: 1.05em;
+    height: inherit;
+    line-height: 1.4em;
+    margin-left: 0;
+    width: inherit;
+}
+#content_container {
+    margin: 10px auto;
+    max-width: 1016px;
+    min-width: 690px;
+    width: 80%;
+}
+header {
+    background: #333;
+    border-bottom: 4px solid #444;
+    height: 70px;
+    margin-top: 0;
+}
+header>h1 {
+    color: #E5E5E5;
+    margin-top: 0;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+#header_bottom {
+    background: #FF8600;
+    border-top: 2px solid #FF6600;
+    height: 5px;
+    width: 100%;
+}
+nav {
+    background: #EFEFEF;
+    box-shadow: 4px 4px 7px #999;
+    height: 30px;
+    margin-bottom: 10px;
+}
+nav > ul {
+    color: #444;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+    list-style-type: none;
+    padding-top: 3px;
+}
+nav > ul > li {
+    border-right: 2px solid #DDD;
+    display: inline;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+#navigation li:last-of-type {
+    border-right: none;
+}
+#navigation a:link,a:visited {
+    color: #444;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+#navigation a:hover {
+    background: #DD4400;
+    color: white;
+}
+.article_container {
+    clear: left;
+    background: white;
+    box-shadow: 4px 4px 20px #777;
+    float: left;
+    height: auto;
+    margin: 10px 0;
+    //overflow: auto;
+    width: 100%;
+}
+article {
+    background: white;
+    clear: left;
+    float: left;
+    padding: 0px 0 0 40px;
+    max-width: 630px;
+}
+article>p {
+    clear: both;
+    margin-bottom: 15px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+footer {
+    background: #EFEFEF;
+    clear: both;
+    height: 20px;
+    margin: 35px 0;
+    width: 100%;
+}
+
+.no_list_style {
+    list-style-type: none;
+}
+
+.tab {
+    float: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
