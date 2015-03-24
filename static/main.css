@@ -119,3 +119,7 @@ footer {
     font-weight: bold;
 }
 
+a#current_page {
+    color: orange;
+}
+
