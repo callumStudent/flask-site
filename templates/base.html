@@ -7,6 +7,14 @@
   </head>
 
   <body>
+  {% set navigation_bar = [
+      ("index", "Home"),
+      ("test", "Programming"),
+      ("test", "Japanese"),
+      ("test", "Archery"),
+      ("test", "Other")
+  ] %}
+  {% set active_page = active_page %}
     <div id="content_container">
       <header>
 	<h1>Prodigy Archer</h1>
@@ -14,21 +22,13 @@
       <div id="header_bottom"></div>
       <nav>
 	<ul id="navigation">
-	  <li>
-	    <a 
-	      {% if request.endpoint == 'index' %} id="current_page" {% endif %} 
-	      href="{{ url_for('index') }}">Home
+	  {% for id, label in navigation_bar %}
+	  <li> 
+	    <a {% if active_page == id %} class="active_page" {% endif %} href="{{ url_for(id) }}">
+		{{ label }}
 	    </a>
 	  </li>
-	  <li>
-	    <a
-	      {% if request.endpoint == 'test' %} id="current_page" {% endif %} 
-	      href="{{ url_for('test') }}">Programming
-	    </a>
-	  </li>
-	  <li><a href="">Japanese</a></li>
-	  <li><a href="">Other</a></li>
-	  <li><a href="">Other</a></li>
+	  {% endfor %}
 	</ul>
       </nav>
 	

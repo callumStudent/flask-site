@@ -119,7 +119,7 @@ footer {
     font-weight: bold;
 }
 
-a#current_page {
+a.active_page {
     color: orange;
 }
 
