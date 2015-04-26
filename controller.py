@@ -6,6 +6,18 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/programming')
+def programming():
+    return render_template('programming.html')
+
+@app.route('/japanese')
+def japanese():
+    return render_template('japanese.html')
+    
+@app.route('/archery')
+def archery():
+    return render_template('archery.html')
+
 @app.route('/test')
 def test():
     return render_template('test.html')
